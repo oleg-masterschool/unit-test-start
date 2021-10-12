@@ -4,6 +4,7 @@
   "description": "Unit testing starter repo",
   "main": "index.js",
   "scripts": {
+    "reset": "git fetch && git reset --hard origin/start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +12,7 @@
     "url": "git+https://github.com/oleg-masterschool/unit-test-start.git"
   },
   "author": "Oleg Glybchenko",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/oleg-masterschool/unit-test-start/issues"
   },
