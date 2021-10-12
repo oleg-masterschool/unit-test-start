@@ -8,7 +8,7 @@ describe('Vehicle class', function () {
 
 describe('TDD', function () {
     it('should have a color property', function () {
-        const car = new Vehicle();
+        const car = new Vehicle('white');
         // assert that car has a "color" property of "white"
         expect(car).toHaveProperty('color', 'white');
     });
