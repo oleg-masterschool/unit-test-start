@@ -1,1 +1,5 @@
-// placeholder for our vehicle class
+class Vehicle {
+
+}
+
+module.exports = Vehicle;

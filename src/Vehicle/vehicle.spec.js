@@ -1,11 +1,15 @@
-// placeholder for Vehicle class tests
-test('sanity', () => { // test
-    expect(true).not.toBe(false); // assertion
-    expect(1 + 1).toBe(2);
-    expect('Learning tests').toHaveLength(14);
-    expect(false).toBeFalsy();
-    expect(typeof null).toBe('object');
-    // expect({}).toBe({}); // fails
-    expect({}).toEqual({});
-    // expect({x: 1, y: 0}).toEqual({ x: 1});
+const Vehicle = require("./vehicle");
+
+describe('Vehicle class', function () {
+    it('should exist', function () {
+        expect(Vehicle).toBeDefined();
+    });
+});
+
+describe('TDD', function () {
+    it('should have a color property', function () {
+        const car = new Vehicle();
+        // assert that car has a "color" property of "white"
+        expect(car).toHaveProperty('color', 'white');
+    });
 });
